@@ -5,7 +5,7 @@ body {
 }
 
 header {
-	background: url('denim-texture.jpg') no-repeat;
+	background: url('resources/denim1.jpg') no-repeat;
 	background-size: cover;
 	padding: 20px;
 	display: flex;
@@ -55,7 +55,7 @@ nav a {
 }
 
 .testimonials {
-	background: url('denim-texture.jpg') no-repeat;
+	background: url('resources/denim1.jpg') no-repeat;
 	background-size: cover;
 	padding: 20px;
 }
