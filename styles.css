@@ -1,12 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
-	font-family: 'Arial', sans-serif;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-	background: url('resources/denim1.jpeg') no-repeat;
-	background-size: cover;
+	background: url('resources/d3.jpg');
+	background-size: contain;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -14,33 +22,37 @@ header {
 }
 
 header .logo {
-	font-size: 24px;
+	font-size: 56px;
+    padding-left: 20px;
 	color: white;
 }
 
 nav {
 	display: flex;
-	gap: 20px;
+	gap: 30px;
 }
 
 nav a {
 	color: white;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 24px;
 	text-decoration: none;
 }
 
 .main-content {
 	background-color: #d3e0e9;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 4fr 1fr;
+    height: 100%;
 	padding: 20px;
 }
 
 .main-content .left-column {
-	color: #333;
-	font-size: 14px;
+	color: #232472;
+    padding-left: 36px;
+	font-size: 16px;
 	line-height: 1.5em;
+    width: 80%;
 }
 
 .main-content .right-column {
@@ -49,19 +61,19 @@ nav a {
 	align-items: center;
 	background-color: #001f3f;
 	color: white;
-	width: 200px;
-	height: 300px;
+	width: 80%;
 	font-family: 'Cursive', sans-serif;
 }
 
 .testimonials {
-	background: url('resources/denim1.jpeg') no-repeat;
-	background-size: cover;
+	background: url('resources/d3.jpg');
+	background-size: contain;
 	padding: 20px;
 }
 
 .testimonials h2 {
-	font-size: 18px;
+	font-size: 48px;
+    padding-left: 20px;
 	color: white;
 	font-weight: bold;
 	text-align: left;
@@ -74,9 +86,10 @@ nav a {
 }
 
 .testimonial-card {
-	background-color: #f0f0f0;
-	padding: 15px;
-	border-radius: 5px;
+	background-color: #a2b4eedc;
+	padding: 40px;
+    height: 120px;
+	border-radius: 50px;
 }
 
 .testimonial-card .user-name {
@@ -95,10 +108,4 @@ nav a {
 
 .testimonial-card .body-text {
 	color: #333;
-}
-
-.testimonial-card .profile-picture {
-	width: 75px;
-	height: 75px;
-	background-color: #ccc;
 }
