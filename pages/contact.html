@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - R-Ark</title>
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+	<header>
+		<div class="logo">R-Ark</div>
+		<nav>
+			<a href="create-yours.html">Create Yours</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="../index.html">Our Story</a>
+			<a href="materials.html">Materials</a>
+			<a href="contact.html" class="active">Contact Us</a>
+		</nav>
+	</header>
+	
+	<main class="contact-container">
+		<div class="page-header">
+			<h1>Get in Touch</h1>
+			<p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+		</div>
+		
+		<div class="contact-content">
+			<div class="contact-info">
+				<div class="info-section">
+					<h2>Contact Information</h2>
+					
+					<div class="contact-item">
+						<div class="contact-icon">📞</div>
+						<div class="contact-details">
+							<h3>Phone</h3>
+							<p><a href="tel:+4712345678">+47 123 45 678</a></p>
+							<span class="availability">Mon-Fri: 9:00 AM - 6:00 PM</span>
+						</div>
+					</div>
+					
+					<div class="contact-item">
+						<div class="contact-icon">📧</div>
+						<div class="contact-details">
+							<h3>Email</h3>
+							<p><a href="mailto:hello@r-ark.com">hello@r-ark.com</a></p>
+							<span class="availability">We respond within 24 hours</span>
+						</div>
+					</div>
+					
+					<div class="contact-item">
+						<div class="contact-icon">📍</div>
+						<div class="contact-details">
+							<h3>Visit Our Studio</h3>
+							<p>123 Denim Street<br>Oslo, Norway 0150</p>
+							<span class="availability">By appointment only</span>
+						</div>
+					</div>
+					
+					<div class="contact-item">
+						<div class="contact-icon">💬</div>
+						<div class="contact-details">
+							<h3>Live Chat</h3>
+							<p>Available on our website</p>
+							<span class="availability">Mon-Fri: 10:00 AM - 5:00 PM</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="social-section">
+					<h3>Follow Us</h3>
+					<div class="social-links">
+						<a href="#" class="social-link">Instagram</a>
+						<a href="#" class="social-link">Facebook</a>
+						<a href="#" class="social-link">Twitter</a>
+						<a href="#" class="social-link">Pinterest</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact-form-section">
+				<h2>Send Us a Message</h2>
+				<form class="contact-form" id="contactForm">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="firstName">First Name *</label>
+							<input type="text" id="firstName" name="firstName" required>
+						</div>
+						<div class="form-group">
+							<label for="lastName">Last Name *</label>
+							<input type="text" id="lastName" name="lastName" required>
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<div class="form-group">
+							<label for="email">Email Address *</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone Number</label>
+							<input type="tel" id="phone" name="phone">
+						</div>
+					</div>
+					
+					<div class="form-group full-width">
+						<label for="subject">Subject *</label>
+						<select id="subject" name="subject" required>
+							<option value="">Please select a subject</option>
+							<option value="custom-order">Custom Order Inquiry</option>
+							<option value="product-question">Product Question</option>
+							<option value="sizing-help">Sizing Help</option>
+							<option value="shipping">Shipping & Returns</option>
+							<option value="wholesale">Wholesale Inquiry</option>
+							<option value="press">Press & Media</option>
+							<option value="sustainability">Sustainability Questions</option>
+							<option value="general">General Inquiry</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+					
+					<div class="form-group full-width">
+						<label for="message">Message *</label>
+						<textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+					</div>
+					
+					<div class="form-group full-width">
+						<label class="checkbox-label">
+							<input type="checkbox" id="newsletter" name="newsletter">
+							<span class="checkmark"></span>
+							Subscribe to our newsletter for updates on new collections and sustainable fashion tips
+						</label>
+					</div>
+					
+					<div class="form-group full-width">
+						<label class="checkbox-label required">
+							<input type="checkbox" id="privacy" name="privacy" required>
+							<span class="checkmark"></span>
+							I agree to the <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Service</a> *
+						</label>
+					</div>
+					
+					<button type="submit" class="submit-btn">
+						<span class="btn-text">Send Message</span>
+						<span class="btn-loading">Sending...</span>
+					</button>
+				</form>
+				
+				<div class="form-success" id="formSuccess">
+					<div class="success-icon">✅</div>
+					<h3>Message Sent Successfully!</h3>
+					<p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="faq-section">
+			<h2>Frequently Asked Questions</h2>
+			<div class="faq-grid">
+				<div class="faq-item">
+					<h3>Who made this great website?</h3>
+					<p>Ya boy Rowan.</p>
+				</div>
+				<div class="faq-item">
+					<h3>What are the three species of camel?</h3>
+					<p>The three species of camel are the Dromedary (one-humped), the Bactrian (two-humped), and the Wild Bactrian.</p>
+				</div>
+				<div class="faq-item">
+					<h3>What is your return policy?</h3>
+					<p>We offer free returns within 30 days of delivery. Custom orders are final sale unless there's a manufacturing defect.</p>
+				</div>
+				<div class="faq-item">
+					<h3>Can I visit your studio?</h3>
+					<p>Send me a pic of your camel first.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<script src="../js/contact.js"></script>
+</body>
+</html>

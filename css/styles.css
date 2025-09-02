@@ -1,0 +1,256 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+	background: url('resources/d3.jpg');
+	background-size: contain;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	font-size: 56px;
+    padding-left: 20px;
+	color: white;
+}
+
+nav {
+	display: flex;
+	gap: 30px;
+}
+
+nav a {
+	color: white;
+	text-transform: uppercase;
+	font-size: 24px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+nav a.active {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.main-content {
+	background-color: #d3e0e9;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+    height: 100%;
+	padding: 20px;
+}
+
+.main-content .left-column {
+	color: #232472;
+    padding-left: 36px;
+	font-size: 16px;
+	line-height: 1.5em;
+    width: 80%;
+}
+
+.main-content .right-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #001f3f;
+	color: white;
+	width: 80%;
+	font-family: 'Cursive', sans-serif;
+}
+
+.testimonials {
+	background: url('resources/d3.jpg');
+	background-size: contain;
+	padding: 20px;
+	padding-bottom: 40px;
+	overflow: visible; /* Ensure nothing spills out */
+}
+
+.testimonials h2 {
+	font-size: 48px;
+    padding-left: 20px;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.testimonials-container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 220px; /* Increased height to properly fit testimonial cards */
+	margin-bottom: 20px;
+}
+
+.testimonial-grid {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	height: 140px;
+	position: absolute;
+	left: 0;
+	animation: scroll 30s linear infinite;
+	top: 20px; /* Add space from the top */
+}
+
+.testimonial-card {
+	background-color: #a2b4eedc;
+	padding: 25px;
+    height: 140px;
+	border-radius: 50px;
+	width: 300px;
+	flex-shrink: 0;
+	margin: 0 10px; /* Add consistent margin between cards */
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.testimonial-card .user-name {
+	font-weight: bold;
+	color: black;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+.testimonial-card .star-rating {
+	color: #ffc107;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.testimonial-card .date {
+	font-size: 12px;
+	color: gray;
+	margin-bottom: 5px;
+}
+
+.testimonial-card .body-text {
+	color: #333;
+	font-size: 14px;
+	line-height: 1.4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-1 * var(--total-width, 100%))); }
+}
+
+/* Hide scrollbars */
+.testimonial-grid::-webkit-scrollbar,
+.testimonials-container::-webkit-scrollbar {
+	display: none;
+}
+
+/* Add Testimonial Section */
+.add-testimonial-section {
+	background-color: #f8f9fa;
+	padding: 60px 20px;
+	margin-top: 20px;
+	border-top: 5px solid #232472;
+}
+
+.add-testimonial-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.add-testimonial-section h2 {
+	color: #232472;
+	font-size: 36px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.testimonial-form {
+	background: white;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-group label {
+	display: block;
+	color: #232472;
+	font-weight: bold;
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+
+.form-group input, 
+.form-group textarea {
+	width: 100%;
+	padding: 12px 15px;
+	border: 2px solid #dee2e6;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+	border-color: #a2b4ee;
+	outline: none;
+}
+
+.star-input {
+	display: flex;
+	gap: 10px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.star-input .star {
+	color: #d1d5db;
+	transition: color 0.2s;
+}
+
+.star-input .star.active,
+.star-input .star:hover,
+.star-input .star:hover ~ .star {
+	color: #ffc107;
+}
+
+.submit-btn {
+	background-color: #232472;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.submit-btn:hover {
+	background-color: #1a1b5d;
+}

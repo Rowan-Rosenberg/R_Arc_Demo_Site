@@ -1,0 +1,55 @@
+<svg width="300" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .jeans {
+      fill: #0e3a7c;
+      stroke: #0a2c5e;
+      stroke-width: 2;
+    }
+    .pocket {
+      fill: #09264f;
+      stroke: #061a35;
+      stroke-width: 1;
+    }
+    .stitching {
+      fill: none;
+      stroke: #be9c53;
+      stroke-width: 2;
+      stroke-dasharray: 3,2;
+    }
+    .logo {
+      fill: #be9c53;
+      font-family: Arial;
+      font-weight: bold;
+    }
+    .button {
+      fill: #be9c53;
+      stroke: #8e7442;
+      stroke-width: 1;
+    }
+  </style>
+  
+  <!-- Jeans outline -->
+  <path class="jeans" d="M100,20 L200,20 L220,80 L230,250 L220,400 L200,480 L170,480 L150,380 L150,480 L120,480 L100,380 L100,250 L80,80 Z" />
+  
+  <!-- Front pockets -->
+  <path class="pocket" d="M120,100 L170,100 L160,180 L130,180 Z" />
+  <path class="pocket" d="M170,100 L220,100 L210,180 L180,180 Z" />
+  
+  <!-- Back pockets -->
+  <path class="pocket" d="M120,220 L150,220 L145,270 L125,270 Z" />
+  <path class="pocket" d="M170,220 L200,220 L195,270 L175,270 Z" />
+  
+  <!-- Stitching -->
+  <path class="stitching" d="M100,20 L200,20" />
+  <path class="stitching" d="M120,100 L170,100 L220,100" />
+  <path class="stitching" d="M150,20 L150,480" />
+  
+  <!-- Buttons -->
+  <circle class="button" cx="150" cy="50" r="5" />
+  <circle class="button" cx="120" cy="240" r="3" />
+  <circle class="button" cx="200" cy="240" r="3" />
+  
+  <!-- Logo on pockets -->
+  <text class="logo" x="132" y="150" font-size="15">R</text>
+  <text class="logo" x="182" y="150" font-size="15">R</text>
+</svg>

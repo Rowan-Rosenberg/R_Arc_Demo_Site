@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Yours - R-Ark</title>
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/create-yours.css">
+	<script src="../js/create-yours.js" defer></script>
+</head>
+<body>
+	<header>
+		<div class="logo">R-Ark</div>
+		<nav>
+			<a href="create-yours.html" class="active">Create Yours</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="../index.html">Our Story</a>
+			<a href="materials.html">Materials</a>
+			<a href="contact.html">Contact Us</a>
+		</nav>
+	</header>
+	
+	<div class="customizer-container">
+		<div class="material-selector">
+			<h2>Select Your Denim</h2>
+			<div class="denim-options">
+				<div class="denim-swatch selected" data-color="light-blue">
+					<img src="../resources/denim1.jpeg" alt="Light Blue Denim">
+				</div>
+				<div class="denim-swatch" data-color="dark-blue">
+					<img src="../resources/d3.jpg" alt="Dark Blue Denim">
+				</div>
+				<div class="denim-swatch" data-color="black">
+					<img src="../resources/d2.jpg" alt="Black Denim">
+				</div>
+				<div class="denim-swatch" data-color="medium-blue">
+					<img src="../resources/denim1.jpeg" alt="Medium Blue Denim">
+				</div>
+				<div class="denim-swatch" data-color="light-wash">
+					<img src="../resources/denim1.jpeg" alt="Light Wash Denim">
+				</div>
+			</div>
+			
+			<div class="style-selector">
+				<h3>Choose Your Style</h3>
+				<div class="style-options">
+					<div class="style-option selected" data-style="jeans">
+						<div class="style-icon jeans-icon"></div>
+						<span>Jeans</span>
+					</div>
+					<div class="style-option" data-style="jacket">
+						<div class="style-icon jacket-icon"></div>
+						<span>Jacket</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-preview">
+			<div class="preview-container">
+				<h2>Some Kind of Mockup Render</h2>
+				<div class="product-image">
+					<!-- Product preview image will be dynamically updated -->
+					<img src="../resources/jeans-preview.svg" id="product-preview-image" alt="Customized Jeans">
+				</div>
+			</div>
+		</div>
+		
+		<div class="additional-features">
+			<h2>Additional Features</h2>
+			<div class="feature-list">
+				<div class="feature-item">
+					<div class="feature-icon denim-color"></div>
+					<span>Duo Color</span>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon accent-fabric"></div>
+					<span>Accent Fabric</span>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon additional-pockets"></div>
+					<span>Additional Pockets</span>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon cropped"></div>
+					<span>Cropped</span>
+				</div>
+				<div class="feature-item">
+					<div class="feature-icon decorative"></div>
+					<span>Decorative Fastenings</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="customization-controls">
+		<button class="prev-step">Previous Step</button>
+		<div class="steps-indicator">
+			<span class="step active"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+		</div>
+		<button class="next-step">Next Step</button>
+	</div>
+	
+	<div class="price-section">
+		<div class="price-container">
+			<span class="price-label">Total Price:</span>
+			<span class="price-amount"></span>
+		</div>
+		<button class="add-to-cart">Add to Cart</button>
+	</div>
+</body>
+</html>
