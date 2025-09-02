@@ -46,7 +46,7 @@ nav a.active {
 }
 
 .main-content {
-	background-color: #d3e0e9;
+	background-color: #f8f9fa;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
     height: 100%;
@@ -65,10 +65,12 @@ nav a.active {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #001f3f;
+	background-color: #232472;
 	color: white;
 	width: 80%;
 	font-family: 'Cursive', sans-serif;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials {
@@ -108,10 +110,10 @@ nav a.active {
 }
 
 .testimonial-card {
-	background-color: #a2b4eedc;
+	background-color: white;
 	padding: 25px;
     height: 140px;
-	border-radius: 50px;
+	border-radius: 15px;
 	width: 300px;
 	flex-shrink: 0;
 	margin: 0 10px; /* Add consistent margin between cards */
@@ -119,11 +121,12 @@ nav a.active {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-card .user-name {
 	font-weight: bold;
-	color: black;
+	color: #232472;
 	font-size: 16px;
 	margin-bottom: 3px;
 }
