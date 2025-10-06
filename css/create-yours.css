@@ -352,7 +352,24 @@
     
     .additional-features {
         grid-column: span 1;
+        /* Remove the large diagonal cut on smaller screens for readability */
+        clip-path: none;
+        margin-left: 0;
+        padding-left: 20px;
     }
+    .product-image { height: 360px; }
+    .price-section,
+    .customization-controls { padding: 16px 20px; }
+}
+
+@media (max-width: 480px) {
+    .material-selector h2,
+    .preview-container h2,
+    .additional-features h2 { font-size: 20px; }
+    .style-options { gap: 12px; }
+    .style-icon { width: 56px; height: 56px; }
+    .denim-swatch { width: 64px; height: 64px; }
+    .product-image { height: 300px; }
 }
 
 /* Active navigation link */
