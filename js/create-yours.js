@@ -69,9 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedDenim = document.querySelector('.denim-swatch.selected').getAttribute('data-color');
         const selectedStyle = document.querySelector('.style-option.selected').getAttribute('data-style');
         
-        // In a real implementation, this would update the image source
-        // For now, we'll just log the selections
-        console.log(`Selected denim: ${selectedDenim}, Selected style: ${selectedStyle}`);
+        // Swap preview image based on style
+        const imgEl = document.getElementById('product-preview-image');
+        if (imgEl) {
+            imgEl.src = selectedStyle === 'jacket' ? '../resources/jacket-preview.svg' : '../resources/jeans-preview.svg';
+            imgEl.alt = selectedStyle === 'jacket' ? 'Customized Jacket' : 'Customized Jeans';
+        }
         
         // Update price based on selections
         updatePrice();
@@ -79,20 +82,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update price based on selections and features
     function updatePrice() {
-        let basePrice = 555;
+        // Base prices in ZAR
+        let basePrice = 899; // jeans base
         
         // Add price for selected style
         const selectedStyle = document.querySelector('.style-option.selected').getAttribute('data-style');
         if (selectedStyle === 'jacket') {
-            basePrice += 30;
+            basePrice += 600; // jacket premium
         }
         
         // Add price for each active feature
         const activeFeatures = document.querySelectorAll('.feature-item.active');
-        basePrice += activeFeatures.length * 10;
+        basePrice += activeFeatures.length * 120; // each add-on
         
-        // Update price display
-        document.querySelector('.price-amount').textContent = `NK ${basePrice.toFixed(2)}`;
+        // Update price display in ZAR
+        const formatZAR = (amount) => `R ${amount.toLocaleString('en-ZA')}`;
+        document.querySelector('.price-amount').textContent = formatZAR(basePrice);
     }
     
     // Add to cart button

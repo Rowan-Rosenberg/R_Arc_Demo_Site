@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" width="360" height="480">
+  <defs>
+    <linearGradient id="denimR" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4674b8"/>
+      <stop offset="100%" stop-color="#2a4f8f"/>
+    </linearGradient>
+  </defs>
+  <!-- Relaxed silhouette with wider legs -->
+  <path d="M70,24 h220 a16,16 0 0 1 16,16 v70 c0,50 -18,84 -44,112 l-24,26 v212 h-88 V248 l-24,-26 C100,194 82,160 82,110 V40 a16,16 0 0 1 16,-16 z" fill="url(#denimR)"/>
+  <!-- center seam -->
+  <path d="M180 60 C188 110 188 210 180 260" fill="none" stroke="#d0a85f" stroke-width="3"/>
+  <!-- hem bars -->
+  <rect x="76" y="430" width="88" height="14" fill="#24447f"/>
+  <rect x="196" y="430" width="88" height="14" fill="#24447f"/>
+</svg>

@@ -156,6 +156,19 @@
     flex-grow: 1;
 }
 
+/* Price chip */
+.material-price {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    border-radius: 16px;
+    background-color: #232472;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
 /* Sustainability Badge */
 .sustainability-badge {
     margin-top: auto;

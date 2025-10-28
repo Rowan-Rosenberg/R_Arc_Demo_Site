@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 520' width='480' height='520'>
+  <defs>
+    <linearGradient id='pdenim' x1='0' x2='0' y1='0' y2='1'>
+      <stop offset='0%' stop-color='#4f7cc0'/>
+      <stop offset='100%' stop-color='#284683'/>
+    </linearGradient>
+  </defs>
+  <rect x='30' y='60' width='420' height='360' rx='18' fill='url(#pdenim)'/>
+  <rect x='236' y='60' width='8' height='360' fill='#1e3a75'/>
+  <rect x='90' y='240' width='110' height='60' rx='8' fill='#3a62a6' stroke='#d0a85f' stroke-width='3'/>
+  <rect x='280' y='240' width='110' height='60' rx='8' fill='#3a62a6' stroke='#d0a85f' stroke-width='3'/>
+  <path d='M60 60 l-34 120 44 28 18-64 M420 60 l34 120 -44 28 -18-64' fill='#3d66ab'/>
+</svg>

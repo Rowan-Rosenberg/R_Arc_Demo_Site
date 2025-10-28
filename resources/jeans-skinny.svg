@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" width="360" height="480">
+  <defs>
+    <linearGradient id="denimS" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#345b9e"/>
+      <stop offset="100%" stop-color="#1a2f5f"/>
+    </linearGradient>
+  </defs>
+  <!-- Skinny silhouette -->
+  <path d="M80,20 h200 a16,16 0 0 1 16,16 v80 c0,40 -12,70 -36,100 l-30,36 v200 h-60 V252 l-30,-36 c-24,-30 -36,-60 -36,-100 V36 a16,16 0 0 1 16,-16 z" fill="url(#denimS)"/>
+  <!-- seams -->
+  <path d="M180 56 C186 100 186 200 180 244" fill="none" stroke="#d0a85f" stroke-width="3"/>
+  <path d="M92 60 L92 410" stroke="#d0a85f" stroke-width="3" stroke-dasharray="5 4"/>
+  <path d="M268 60 L268 410" stroke="#d0a85f" stroke-width="3" stroke-dasharray="5 4"/>
+  <!-- pockets -->
+  <path d="M96 92 q36 -16 64 -14 v28 q-28 10 -64 6 z" fill="#294a88" stroke="#d0a85f" stroke-width="3"/>
+  <path d="M264 92 q-36 -16 -64 -14 v28 q28 10 64 6 z" fill="#294a88" stroke="#d0a85f" stroke-width="3"/>
+</svg>

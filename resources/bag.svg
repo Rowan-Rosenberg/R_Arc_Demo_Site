@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360">
+  <defs>
+    <linearGradient id="denimBag" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4f78bd"/>
+      <stop offset="100%" stop-color="#2b4a8a"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="90" width="240" height="200" rx="16" fill="url(#denimBag)"/>
+  <path d="M110 90 c0 -40 140 -40 140 0" stroke="#e3c07b" stroke-width="6" fill="none"/>
+  <rect x="110" y="160" width="140" height="60" rx="10" fill="#3d63a3" stroke="#e3c07b" stroke-width="3"/>
+</svg>

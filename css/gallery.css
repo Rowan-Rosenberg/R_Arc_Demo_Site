@@ -89,7 +89,7 @@
 .gallery-item img {
     width: 100%;
     height: 70%;
-    object-fit: cover;
+    object-fit: contain; /* SVG garments fit nicely */
     transition: transform 0.3s ease;
 }
 

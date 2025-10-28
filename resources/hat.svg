@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <defs>
+    <linearGradient id="denimHat" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4a73b8"/>
+      <stop offset="100%" stop-color="#27467e"/>
+    </linearGradient>
+  </defs>
+  <!-- brim -->
+  <ellipse cx="180" cy="190" rx="140" ry="36" fill="#1d3870"/>
+  <!-- crown -->
+  <path d="M90 110 q90 -80 180 0 v80 H90 z" fill="url(#denimHat)"/>
+  <!-- top stitch -->
+  <path d="M100 150 q80 -60 160 0" fill="none" stroke="#e3c07b" stroke-width="3" stroke-dasharray="6 4"/>
+</svg>
