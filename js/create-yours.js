@@ -69,10 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedDenim = document.querySelector('.denim-swatch.selected').getAttribute('data-color');
         const selectedStyle = document.querySelector('.style-option.selected').getAttribute('data-style');
         
-        // Swap preview image based on style
+        // Swap preview image based on style (online photos from Unsplash Featured)
         const imgEl = document.getElementById('product-preview-image');
         if (imgEl) {
-            imgEl.src = selectedStyle === 'jacket' ? '../resources/jacket-preview.svg' : '../resources/jeans-preview.svg';
+            const jeansUrl = 'https://source.unsplash.com/800x1000/?denim,jeans';
+            const jacketUrl = 'https://source.unsplash.com/800x1000/?denim,jacket';
+            imgEl.src = selectedStyle === 'jacket' ? jacketUrl : jeansUrl;
             imgEl.alt = selectedStyle === 'jacket' ? 'Customized Jacket' : 'Customized Jeans';
         }
         
@@ -107,7 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Product added to cart!');
     });
     
-    // Initialize with default price
+    // Initialize preview and price on load
+    updateProductPreview();
     updatePrice();
     
     // Initialize the feature icons to make them more interactive
